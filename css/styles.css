@@ -1,3 +1,12 @@
+body{
+  background: url("/assets/Background.png");
+  min-width: 100%;
+  min-height: 100%;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+  background-size: cover;
+}
 .mdl-card__title-text{
   font-size:18px;
   margin-left:-3%;
