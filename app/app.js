@@ -1,4 +1,4 @@
-var app = angular.module("MovieApp", []);
+var app = angular.module("MovieApp", ['ng-route']);
 
 app.controller("mainController", function($scope,$http) {
 
