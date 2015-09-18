@@ -13,7 +13,7 @@
 
     <title></title>
   </head>
-  <body>
+  <body ng-app="MovieApp">
 
 <div class="fix-it mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header">
@@ -44,39 +44,34 @@
 </div>
 <br>
 <br>
-<div class="con" ng-app="MovieApp">
-  <div class="fullwidth" ng-controller="mainController">
 
-   <div class="mdl-grid" >
-     <div class="mdl-cell mdl-cell--4-col mdl-cell-6-col-tablet mdl-cell--12-col-phone" ng-repeat="movie in movies">
-       <div class="mdl-card mdl-shadow--4dp">
-         <div class="mdl-card__title">
-           <h6 class="mdl-card__title-text">{{movie.title}}</h6>
-         </div>
-         <div class="mdl-card__media">
-           <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
-         </div>
-         <div class="mdl-card__supporting-text">
-           <h5>Movie Raitng</h5>
-           <br>
-           <br>
-           <span class="rating">
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             <i class="fa fa-star"></i>
-             {{movie.vote_average}}/10
-           </span>
-           <br>
-           <br>
-         </div>
-       </div>
-     </div>
-     <!-- end of image -->
-   </div>
-</div>
-
+<div class="mdl-grid fullwidth"  ng-controller="mainController">
+  <div class="mdl-cell mdl-cell--3-col" ng-repeat="movie in movies">
+    <div class="mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__title">
+        <h6 class="mdl-card__title-text">{{movie.title}}</h6>
+      </div>
+      <div class="mdl-card__media">
+        <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
+      </div>
+      <div class="mdl-card__supporting-text">
+        <h5>Movie Raitng</h5>
+        <br>
+        <br>
+        <span class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          {{movie.vote_average}}/10
+        </span>
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <!-- end of image -->
 </div>
 
 <!--<div class="container" ng-app="MovieApp">

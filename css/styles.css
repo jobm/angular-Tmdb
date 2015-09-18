@@ -7,6 +7,12 @@ body{
  -o-background-size: cover;
   background-size: cover;
 }
+.fullwidth{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
 .mdl-card__title-text{
   font-size:18px;
   margin-left:-3%;
