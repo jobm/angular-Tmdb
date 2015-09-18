@@ -13,5 +13,128 @@
   </head>
   <body>
 
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <span class="mdl-layout-title">Angular Movies</span>
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Home</a>
+        <a class="mdl-navigation__link" href="#">About</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Angular Movies</span>
+    <hr>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="#">Latest</a>
+      <hr>
+      <a class="mdl-navigation__link" href="#">Now Playing</a>
+      <hr>
+      <a class="mdl-navigation__link" href="#">Upcoming</a>
+      <hr>
+      <a class="mdl-navigation__link" href="#">Top Rated</a>
+      <hr>
+    </nav>
+  </div>
+</div>
+</div>
+<br>
+<br>
+<div class="con" ng-app="MovieApp">
+  <div class="fullwidth" ng-controller="mainController">
+
+   <div class="mdl-grid" >
+     <div class="mdl-cell mdl-cell--4-col mdl-cell-6-col-tablet mdl-cell--12-col-phone" ng-repeat="movie in movies">
+       <div class="mdl-card mdl-shadow--4dp">
+         <div class="mdl-card__title">
+           <h6 class="mdl-card__title-text">{{movie.title}}</h6>
+         </div>
+         <div class="mdl-card__media">
+           <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
+         </div>
+         <div class="mdl-card__supporting-text">
+           <h5>Movie Raitng</h5>
+           <br>
+           <br>
+           <span class="rating">
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             <i class="fa fa-star"></i>
+             {{movie.vote_average}}/10
+           </span>
+           <br>
+           <br>
+         </div>
+       </div>
+     </div>
+     <!-- end of image -->
+   </div>
+</div>
+
+</div>
+
+<!--<div class="container" ng-app="MovieApp">
+  <br>
+  <div class="container" ng-controller="mainController">
+    <h2 class="text-center">IN THEATERS</h2>
+    <div id="movie-container" class="row alert alert-success">
+      <div class="movie-desc col-md-4 col-sm-6">
+        <img src="https://image.tmdb.org/t/p/w396/g23cs30dCMiG4ldaoVNP1ucjs6.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>{{name}}</h4>
+          <div class="star-rating">
+            <span class="fa fa-star" data-rating="1"></span>
+            <span class="fa fa-star" data-rating="2"></span>
+            <span class="fa fa-star" data-rating="3"></span>
+            <span class="fa fa-star" data-rating="4"></span>
+            <span class="fa fa-star" data-rating="5"></span>
+            <span class="badge"> {{rating}}</span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="movie-desc col-md-4 col-sm-6">
+        <a href="http://codepen.io/ThiagoFerreir4/full/gpvJOK" target="_blank" class="portfolio-link" data-toggle="modal">
+          <img src="https://image.tmdb.org/t/p/w396/g23cs30dCMiG4ldaoVNP1ucjs6.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Fantastic Four</h4>
+          <div class="star-rating">
+            <span class="fa fa-star" data-rating="1"></span>
+            <span class="fa fa-star" data-rating="2"></span>
+            <span class="fa fa-star" data-rating="3"></span>
+            <span class="fa fa-star" data-rating="4"></span>
+            <span class="fa fa-star" data-rating="5"></span>
+            <span class="badge"> 7.8</span>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="movie-desc col-md-4 col-sm-6">
+        <a href="http://codepen.io/ThiagoFerreir4/full/gpvJOK" target="_blank" class="portfolio-link" data-toggle="modal">
+          <img src="https://image.tmdb.org/t/p/w396/g23cs30dCMiG4ldaoVNP1ucjs6.jpg" class="img-responsive" alt="">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Fantastic Four</h4>
+          <div class="star-rating">
+            <span class="fa fa-star" data-rating="1"></span>
+            <span class="fa fa-star" data-rating="2"></span>
+            <span class="fa fa-star" data-rating="3"></span>
+            <span class="fa fa-star" data-rating="4"></span>
+            <span class="fa fa-star" data-rating="5"></span>
+            <span class="badge"> 7.8</span>
+
+          </div>
+          <span>Genre: {{ genre }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
   </body>
 </html>
