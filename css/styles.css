@@ -1,0 +1,22 @@
+.mdl-card__title-text{
+  font-size:18px;
+  margin-left:-3%;
+}
+.mdl-grid{
+  padding-top:4%;
+}
+.rating{
+  font-size:22px;
+}
+
+.mdl-card{
+  padding-top:4%;
+  max-width:100%;
+}
+.tagline{
+  font-size:18px;
+}
+.mdl-card img{
+  max-width:100%;
+  height:100%;
+}
