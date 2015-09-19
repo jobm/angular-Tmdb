@@ -15,3 +15,14 @@ app.controller("mainController", function($scope,$http,$routeParams) {
     $scope.image_url = response.results.poster_path;
   });
 });
+
+app.directive('moviePoster', function(){
+    return function(scope, element, attrs){
+        var url = attrs.moviePoster;
+        element.css({
+            'background-image': 'url(' + url +')',
+            'background-size' : 'cover'
+
+        });
+    };
+});

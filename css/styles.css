@@ -15,7 +15,7 @@ body{
 }
 .mdl-card__title-text{
   font-size:18px;
-  margin-left:-3%;
+  margin-left:0;
 }
 .mdl-grid{
   padding-top:4%;
@@ -28,13 +28,13 @@ body{
     padding-top:4%;
     min-width:100%;
     height: auto;
-    background-color: transparent;
 }
 .tagline{
   font-size:18px;
 }
 .mdl-card_media{
     background-color: transparent;
+    background-size: cover;
 }
 .mdl-card_media img{
   min-width:100%;
@@ -43,4 +43,8 @@ body{
 .fix-it{
   position: fixed;
   z-index: 100;
+}
+div[movie-poster]{
+    width:100%;
+    height : 100%;
 }
