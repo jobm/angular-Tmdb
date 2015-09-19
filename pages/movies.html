@@ -11,7 +11,7 @@
               </div>
               <div class="mdl-cell mdl-cell--8-col">
                   <article class="over-view">
-                      {{ movie.overview | limitTo: 100 }}{{movie.overview.length > 20 ? '...' : ''}}
+                      {{ movie.overview | limitTo: 400 }}{{movie.overview.length > 400 ? '...' : ''}}
 <!--                      {{movie.overview}}-->
                   </article>
               </div>

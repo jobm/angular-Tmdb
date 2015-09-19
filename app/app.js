@@ -25,16 +25,6 @@ app.controller("moviesController", function($scope,$http,$routeParams) {
     $scope.image_url = response.results.poster_path;
   });
 });
-//app.directive('movieImage', function(){
-//    return function(scope, element, attrs) {
-//        scope.$watch(attrs.movieImage, function(value) {
-//            element.css({
-//                'background-image': 'url(' + value +')',
-//                'background-size' : 'cover'
-//            });
-//        });
-//    };
-//});
 
 
 
