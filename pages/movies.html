@@ -1,12 +1,21 @@
-{{prm}}
 <div class="mdl-grid fullwidth">
   <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet md-cell-12-col-phone" ng-repeat="movie in movies">
     <div class="mdl-card mdl-shadow--4dp">
       <div class="mdl-card__title">
         <h6 class="mdl-card__title-text">{{movie.title}}</h6>
       </div>
-      <div class="mdl-card__media" ng-style="">
-           <img ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
+      <div class="mdl-card__media">
+          <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--6-col">
+                   <img ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
+              </div>
+              <div class="mdl-cell mdl-cell--6-col">
+                  <article>
+                      {{movie.overview}}
+                  </article>
+              </div>
+          </div>
+
       </div>
       <div class="mdl-card__supporting-text">
         <h5>Movie Raitng</h5>
