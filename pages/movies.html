@@ -10,9 +10,10 @@
                    <img ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
               </div>
               <div class="mdl-cell mdl-cell--8-col">
-                  <p class="over-view">
-                      {{movie.overview}}
-                  </p>
+                  <article class="over-view">
+                      {{ movie.overview | limitTo: 100 }}{{movie.overview.length > 20 ? '...' : ''}}
+<!--                      {{movie.overview}}-->
+                  </article>
               </div>
           </div>
 
