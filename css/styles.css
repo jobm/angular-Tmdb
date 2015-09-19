@@ -1,5 +1,5 @@
 body{
-  background: url("/assets/Background.png");
+  background: url("/assets/Background.png")no-repeat center center fixed;
   min-width: 100%;
   min-height: 100%;
  -webkit-background-size: cover;
@@ -8,7 +8,7 @@ body{
   background-size: cover;
 }
 .fullwidth{
-  width: 100%;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -26,14 +26,15 @@ body{
 
 .mdl-card{
   padding-top:4%;
-  max-width:100%;
+  width:auto;
+    height: auto;
 }
 .tagline{
   font-size:18px;
 }
-.mdl-card img{
-  max-width:100%;
-  height:100%;
+.mdl-card_media img{
+  width:auto;
+  height:auto;
 }
 .fix-it{
   position: fixed;
