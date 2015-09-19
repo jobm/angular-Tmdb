@@ -4,10 +4,8 @@
       <div class="mdl-card__title">
         <h6 class="mdl-card__title-text">{{movie.title}}</h6>
       </div>
-      <div class="mdl-card__media">
-          <div movie-poster="http://image.tmdb.org/t/p/w500{{movie.poster_path}}">
-          </div>
-<!--        <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">-->
+      <div class="mdl-card__media" ng-style="">
+           <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}">
       </div>
       <div class="mdl-card__supporting-text">
         <h5>Movie Raitng</h5>
