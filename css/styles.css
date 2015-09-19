@@ -33,8 +33,7 @@ body{
   font-size:18px;
 }
 .mdl-card_media{
-    background-color: transparent;
-    background-size: cover;
+  background: transparent;
 }
 .mdl-card_media img{
   min-width:100%;
@@ -47,4 +46,7 @@ body{
 div[movie-image]{
     min-width:100%;
     min-height : auto;
+}
+.over-view{
+    font-size: 22px;
 }
