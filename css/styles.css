@@ -25,15 +25,19 @@ body{
 }
 
 .mdl-card{
-  padding-top:4%;
-  width:auto;
+    padding-top:4%;
+    min-width:100%;
     height: auto;
+    background-color: transparent;
 }
 .tagline{
   font-size:18px;
 }
+.mdl-card_media{
+    background-color: transparent;
+}
 .mdl-card_media img{
-  width:auto;
+  min-width:100%;
   height:auto;
 }
 .fix-it{
