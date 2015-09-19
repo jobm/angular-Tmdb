@@ -2,18 +2,16 @@
 <html>
   <head>
       <meta charset="utf-8">
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
+      </script>
+      <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+      <script type="text/javascript" src="https://code.angularjs.org/1.4.6/angular-route.min.js"></script>
+<!--      <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
 
       <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.cyan-light_blue.min.css" />       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="css/styles.css">
-
-      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js">
-      </script>
-
-      <script type="text/javascript" src="https://code.angularjs.org/1.4.6/angular-route.min.js"></script>
-      <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
-
       <title>Tmdb Angular</title>
     </head>
     <body ng-app="app">
@@ -28,6 +26,7 @@
                   </nav>
               </div>
           </header>
+<!--
           <div class="mdl-layout__drawer">
               <span class="mdl-layout-title">Angular Movies</span>
               <hr>
@@ -42,14 +41,33 @@
                   <hr>
               </nav>
           </div>
+-->
         </div>
         <br>
         <br>
+<!--
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <div class="mdl-tabs__tab-bar">
+                <a href="#/movies/popular" class="mdl-tabs__tab is-active">Popular Movies</a>
+                <a href="#/movies/now_playing" class="mdl-tabs__tab">Now Playing</a>
+                <a href="#/movies/upcoming" class="mdl-tabs__tab">Up Coming</a>
+                <a href="#/movies/top_rated" class="mdl-tabs__tab">Top Rated</a>
+            </div>
+        </div>
+-->
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+      <div class="mdl-tabs__tab-bar">
+          <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+          <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+          <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+      </div>
+    </div>
         <!--view switching-->
         <div ng-view>  
         </div>
         <!--end of view switching-->
         <script type="text/javascript" src="app/app.js"></script>
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="app/app_jquery.js"></script>
     </body>
 </html>

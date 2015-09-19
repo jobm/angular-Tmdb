@@ -50,9 +50,11 @@ div[movie-image]{
 .over-view{
     font-size: 22px;
 }
+/*
 .is-active{
     border-bottom: 4px solid #0ff;
 }
+*/
 .mdl-tabs{
     padding-top:3%;
     background-color: white;

@@ -1,6 +1,7 @@
 $(function(){
-    if(!$('.over-view').is(':empty')){
-        alert($('.over-view').text());
-    }
+    $('#tab1').click(function(){
+        alert('')'
+        $('#tab1').removeClass(".is-active");
+    });
 });
 
