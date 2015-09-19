@@ -50,11 +50,12 @@ div[movie-image]{
 .over-view{
     font-size: 22px;
 }
-.tab-nav{
-    padding-top:1%;
-}
 .is-active{
-    text-decoration: underline;
-    text-decoration-color: red;
-    text-decoration-style: solid;
+    border-bottom: 4px solid #0ff;
 }
+.mdl-tabs{
+    padding-top:3%;
+    background-color: white;
+    max-height: 5%;
+}
+
