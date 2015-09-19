@@ -8,7 +8,7 @@ app.config(function($routeProvider){
     })
 });
 
-app.controller("mainController", function($scope,$http) {
+app.controller("mainController", function($scope,$http,$routeParams) {
 
   $http.get("https://api.themoviedb.org/3/movie/top_rated?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
     $scope.movies = response.results;
