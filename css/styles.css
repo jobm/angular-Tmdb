@@ -32,10 +32,12 @@ body{
 .tagline{
   font-size:18px;
 }
+/*
 .mdl-card_media{
     background-color: transparent;
     background-size: cover;
 }
+*/
 .mdl-card_media img{
   min-width:100%;
   height:auto;

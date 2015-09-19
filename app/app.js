@@ -18,11 +18,11 @@ app.controller("mainController", function($scope,$http,$routeParams) {
 
 app.directive('moviePoster', function(){
     return function(scope, element, attrs){
-        var url = attrs.moviePoster;
-        element.css({
-            'background-image': 'url(' + url +')',
-            'background-size' : 'cover'
-
+        attrs.$observe('moviePoster', function(value) {
+            element.css({
+                'background-image': 'url(' + value +')',
+                'background-size' : 'cover'
+            });
         });
     };
 });
