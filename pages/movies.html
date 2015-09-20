@@ -1,19 +1,20 @@
 <div class="mdl-grid fullwidth">
-  <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet md-cell-12-col-phone" ng-repeat="movie in movies">
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--12-col-tablet mdl-cell-12-col-phone" ng-repeat="movie in movies">
     <div class="mdl-card mdl-shadow--4dp">
       <div class="mdl-card__title">
         <h6 class="mdl-card__title-text">{{movie.title}}</h6>
       </div>
       <div class="mdl-card__media">
           <div class="mdl-grid">
-              <div class="mdl-cell mdl-cell--4-col">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
                    <img ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}">
               </div>
-              <div class="mdl-cell mdl-cell--8-col">
-                  <article class="over-view">
-                      {{ movie.overview | limitTo: 400 }}{{movie.overview.length > 400 ? '...' : ''}}
+               <div class="mdl-layout-spacer"></div>
+              <div class="mdl-cell mdl-cell--8-col mdl-cell-8-col-tablet mdl-cell-8-col-phone">
+                  <p class="over-view">
+                      {{ movie.overview | limitTo: 200 }}{{movie.overview.length > 200 ? '...' : ''}}
 <!--                      {{movie.overview}}-->
-                  </article>
+                  </p>
               </div>
           </div>
 

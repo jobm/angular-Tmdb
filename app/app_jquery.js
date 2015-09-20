@@ -1,4 +1,20 @@
 $(function(){
+    $('.mdl-tabs__tab-bar > a').each(function(){
+        $(this).click(function(){
+            $('#about').removeClass('is-active-tab');
+            $('#home').removeClass('is-active-tab')
+        });
+    });
+    $('#home').click(function(){
+        $('.mdl-tabs__tab-bar > a').each(function(){$(this).removeClass('is-active-tab')});
+        $(this).addClass('is-active-tab');
+        $('#about').removeClass('is-active-tab');
+    });
+    $('#about').click(function(){
+        $('.mdl-tabs__tab-bar > a').each(function(){$(this).removeClass('is-active-tab')});
+         $(this).addClass('is-active-tab');
+        $('#home').removeClass('is-active-tab');
+    });
     $('#tab1').click(function(){
         $('#tab1').addClass("is-active-tab");
         $('#tab2').removeClass("is-active-tab");
