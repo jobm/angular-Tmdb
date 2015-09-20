@@ -15,7 +15,18 @@ app.config(function($routeProvider){
 
 
 app.controller("mainController", function($scope,$http,$routeParams) {
- $scope.title = "Movies";
+
+
+    $http.get("https://api.themoviedb.org/3/movie/now_playing?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
+//        var count = 0;
+//        for(var i = 0; i < response.results.length; i++){
+//            while(count < 5){
+//                $scope.theaters = response.results[i];
+//                console.log(response.results[i]);
+//                count++;
+//            }
+//        }
+  });
 });
 
 app.controller("moviesController", function($scope,$http,$routeParams) {

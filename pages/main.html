@@ -1,11 +1,8 @@
-<!--
-<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-  <div class="mdl-tabs__tab-bar">
-      <a href="#starks-panel" class="mdl-tabs__tab is-active">Popular Movies</a>
-      <a href="#lannisters-panel" class="mdl-tabs__tab">Now Playing</a>
-      <a href="#targaryens-panel" class="mdl-tabs__tab">Up Coming</a>
-      <a href="#targaryens-panel" class="mdl-tabs__tab">Top Rated</a>
-  </div>
-</div>
--->
+
+<ul ng-repeat="movie in theaters">
+    <li>
+        <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="">
+    </li>
+</ul>
+
 

@@ -43,10 +43,7 @@ body{
   position: fixed;
   z-index: 100;
 }
-div[movie-image]{
-    min-width:100%;
-    min-height : auto;
-}
+
 .over-view{
     font-size: 22px;
 }
@@ -61,3 +58,7 @@ div[movie-image]{
     height: auto;
 }
 
+[ul]li{
+    list-style: none;
+    display: inline-block;
+}
