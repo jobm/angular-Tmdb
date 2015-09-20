@@ -11,6 +11,11 @@ app.config(function($routeProvider){
         templateUrl:'pages/movies.html',
         controller: 'moviesController'
     })
+
+    .when('/about',{
+        templateUrl:'pages/about.html',
+        controller:'mainController'
+    })
 });
 
 
