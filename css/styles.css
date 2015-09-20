@@ -50,11 +50,9 @@ div[movie-image]{
 .over-view{
     font-size: 22px;
 }
-/*
-.is-active{
+.is-active-tab{
     border-bottom: 4px solid #0ff;
 }
-*/
 .mdl-tabs{
     background-color: white;
     max-height: 5%;
