@@ -12,9 +12,9 @@ app.config(function($routeProvider){
         controller: 'moviesController'
     })
 
-    .when('/movies/details/:id',{
-        templateUrl: 'pages/movie_details.html',
-        controller: 'moviesController'
+    .when('/movie/details/:Id',{
+        templateUrl: 'pages/movie_detials.html',
+        controller: 'moviesDetailsController'
     })
 
     .when('/about',{
@@ -41,11 +41,17 @@ app.controller("moviesController", function($scope,$http,$routeParams) {
     $scope.prm = $routeParams.prm;
     $http.get("https://api.themoviedb.org/3/movie/"+$scope.prm+"?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
     $scope.movies = response.results;
-    $scope.image_url = response.results.poster_path;
-    $scope.id = response.results.id;
+//    $scope.image_url = response.results.poster_path;
+
   });
 });
 
+app.controller("moviesDetailsController",function($scope,$http,$routeParams){
+    $scope.id = $routeParams.Id;
+    $http.get("https://api.themoviedb.org/3/movie/"+$scope.id+"?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
+        console.log(response);
+    });
+});
 
 
 
