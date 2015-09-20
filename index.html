@@ -6,8 +6,6 @@
       </script>
       <script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
       <script type="text/javascript" src="https://code.angularjs.org/1.4.6/angular-route.min.js"></script>
-<!--      <script type="text/javascript" src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>-->
-
       <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.cyan-light_blue.min.css" />       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
       <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -15,38 +13,19 @@
       <title>Tmdb Angular</title>
     </head>
     <body ng-app="app">
-      <div class="fix-it mdl-layout mdl-js-layout mdl-layout--fixed-header">
-          <header class="mdl-layout__header">
-              <div class="mdl-layout__header-row">
+        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+            <div class="mdl-layout__header-row">
                   <span class="mdl-layout-title">Angular Movies</span>
                   <div class="mdl-layout-spacer"></div>
                   <nav class="mdl-navigation">
-                      <a class="mdl-navigation__link" href="#">Home</a>
-                      <a class="mdl-navigation__link" href="#">About</a>
+                      <a class="mdl-navigation__link" href="#/">
+                          <span class="fa fa-home" style="font-size:42px; margin-top:12px;"></span>
+                      </a>
+                      <a class="mdl-navigation__link" href="#">
+                          <span class="fa fa-info" style="font-size:42px; margin-top:12px;"></span>
+                      </a>
                   </nav>
               </div>
-          </header>
-<!--
-          <div class="mdl-layout__drawer">
-              <span class="mdl-layout-title">Angular Movies</span>
-              <hr>
-              <nav class="mdl-navigation">
-                  <a class="mdl-navigation__link" href="#/movies/popular">Popular</a>
-                  <hr>
-                  <a class="mdl-navigation__link" href="#/movies/now_playing">Now Playing</a>
-                  <hr>
-                  <a class="mdl-navigation__link" href="#/movies/upcoming">Upcoming</a>
-                  <hr>
-                  <a class="mdl-navigation__link" href="#/movies/top_rated">Top Rated</a>
-                  <hr>
-              </nav>
-          </div>
--->
-        </div>
-        <br>
-        <br>
-<!--
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
             <div class="mdl-tabs__tab-bar">
                 <a href="#/movies/popular" class="mdl-tabs__tab is-active">Popular Movies</a>
                 <a href="#/movies/now_playing" class="mdl-tabs__tab">Now Playing</a>
@@ -54,14 +33,8 @@
                 <a href="#/movies/top_rated" class="mdl-tabs__tab">Top Rated</a>
             </div>
         </div>
--->
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
-      <div class="mdl-tabs__tab-bar">
-          <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
-          <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
-          <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
-      </div>
-    </div>
+        <br>
+        <br>
         <!--view switching-->
         <div ng-view>  
         </div>

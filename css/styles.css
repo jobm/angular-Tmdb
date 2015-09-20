@@ -56,8 +56,10 @@ div[movie-image]{
 }
 */
 .mdl-tabs{
-    padding-top:3%;
     background-color: white;
     max-height: 5%;
+}
+.tab-navs{
+    height: auto;
 }
 
