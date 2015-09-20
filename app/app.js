@@ -12,6 +12,11 @@ app.config(function($routeProvider){
         controller: 'moviesController'
     })
 
+    .when('/movies/details/:id',{
+        templateUrl: 'pages/details.html',
+        controller: 'moviesController'
+    })
+
     .when('/about',{
         templateUrl:'pages/about.html',
         controller:'mainController'

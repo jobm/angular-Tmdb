@@ -1,19 +1,20 @@
 $(function(){
     $('.mdl-tabs__tab-bar > a').each(function(){
         $(this).click(function(){
-            $('#about').removeClass('is-active-tab');
-            $('#home').removeClass('is-active-tab')
+            $('#home > span').removeClass('is-active-tab');
+            $('#about > span').removeClass('is-active-tab')
         });
     });
+    //$('.mdl-tabs__tab-bar > a')
     $('#home').click(function(){
         $('.mdl-tabs__tab-bar > a').each(function(){$(this).removeClass('is-active-tab')});
-        $(this).addClass('is-active-tab');
-        $('#about').removeClass('is-active-tab');
+        $('#home > span').addClass('is-active-tab');
+        $('#about > span').removeClass('is-active-tab');
     });
     $('#about').click(function(){
         $('.mdl-tabs__tab-bar > a').each(function(){$(this).removeClass('is-active-tab')});
-         $(this).addClass('is-active-tab');
-        $('#home').removeClass('is-active-tab');
+         $('#about > span').addClass('is-active-tab');
+        $('#home > span').removeClass('is-active-tab');
     });
     $('#tab1').click(function(){
         $('#tab1').addClass("is-active-tab");
