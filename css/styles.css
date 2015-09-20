@@ -51,10 +51,8 @@ body{
     border-bottom: 4px solid #0ff;
 }
 .mdl-tabs{
+    position: fixed;
     background-color: white;
-    max-height: 5%;
-}
-.tab-navs{
-    height: auto;
+    z-index: 100;
 }
 

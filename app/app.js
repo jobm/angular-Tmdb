@@ -27,9 +27,9 @@ app.controller("mainController", function($scope,$http,$routeParams) {
 //            }
 //        }
         $scope.first_movie = response.results[0];
-        var sec_movie = response.results[1];
-        var third_movie = response.results[2];
-        var fourth_movie = response.results[3];
+        $scope.sec_movie = response.results[1];
+        $scope.third_movie = response.results[2];
+        $scope.fourth_movie = response.results[3];
 
   });
 });
