@@ -13,7 +13,7 @@ app.config(function($routeProvider){
     })
 
     .when('/movies/details/:id',{
-        templateUrl: 'pages/details.html',
+        templateUrl: 'pages/movie_details.html',
         controller: 'moviesController'
     })
 
@@ -28,14 +28,7 @@ app.controller("mainController", function($scope,$http,$routeParams) {
 
 
     $http.get("https://api.themoviedb.org/3/movie/now_playing?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
-//        var count = 0;
-//        for(var i = 0; i < response.results.length; i++){
-//            while(count < 5){
-//                $scope.theaters = response.results[i];
-//                console.log(response.results[i]);
-//                count++;
-//            }
-//        }
+
         $scope.first_movie = response.results[0];
         $scope.sec_movie = response.results[1];
         $scope.third_movie = response.results[2];
@@ -49,6 +42,7 @@ app.controller("moviesController", function($scope,$http,$routeParams) {
     $http.get("https://api.themoviedb.org/3/movie/"+$scope.prm+"?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
     $scope.movies = response.results;
     $scope.image_url = response.results.poster_path;
+    $scope.id = response.results.id;
   });
 });
 
