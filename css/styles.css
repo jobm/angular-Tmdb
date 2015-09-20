@@ -58,7 +58,3 @@ body{
     height: auto;
 }
 
-[ul]li{
-    list-style: none;
-    display: inline-block;
-}
