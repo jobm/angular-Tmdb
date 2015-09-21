@@ -4,11 +4,12 @@
     <div class="container">
         <div class="mdl-grid">
             <div class="mdl-cell mdl-cell--4-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
-                <h4>Movie Plot</h4>
-                <p class="over-view">{{movie.overview}}</p>
+                <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""/>
+
             </div>
             <div class="mdl-cell mdl-cell--8-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
-                <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""/>
+                <h4>Movie Plot</h4>
+                <p class="over-view">{{movie.overview}}</p>
             </div>
         </div>
 
