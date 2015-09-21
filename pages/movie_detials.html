@@ -2,6 +2,16 @@
 <div class="container">
     <h3>{{movie.title}}</h3>
     <div class="container">
-        <img ng-src="https://image.tmdb.org/t/p/w780{{movie.poster_path}}" alt=""/>
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
+                <h4>Movie Plot</h4>
+                <p class="over-view">{{movie.overview}}</p>
+            </div>
+            <div class="mdl-cell mdl-cell--8-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
+                <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""/>
+            </div>
+        </div>
+
     </div>
+
 </div>

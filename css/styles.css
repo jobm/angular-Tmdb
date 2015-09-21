@@ -46,6 +46,8 @@ body{
 
 .over-view{
     font-size: 22px;
+    word-wrap: break-word;
+    color:#000;
 }
 .is-active-tab{
     border-bottom: 4px solid #0ff;
@@ -54,9 +56,6 @@ body{
     position: fixed;
     background-color: white;
     z-index: 100;
-}
-.over-view{
-    color:#fff;
 }
 .container{
     margin-left: 4%;
