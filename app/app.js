@@ -49,7 +49,7 @@ app.controller("moviesController", function($scope,$http,$routeParams) {
 app.controller("moviesDetailsController",function($scope,$http,$routeParams){
     $scope.id = $routeParams.Id;
     $http.get("https://api.themoviedb.org/3/movie/"+$scope.id+"?api_key=b50218f262d316468a8928b0f29ac476").success(function(response){
-        console.log(response);
+        $scope.movie = response;
     });
 });
 

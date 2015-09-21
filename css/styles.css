@@ -58,3 +58,10 @@ body{
 .over-view{
     color:#fff;
 }
+.container{
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 2%;
+    text-align: center;
+}
+
