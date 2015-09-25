@@ -34,12 +34,22 @@
                 <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{back_drop.file_path}}" alt="" />
             </div>
         </div>
-
+        <br>
+        <h3>Similar Movies</h3>
+        <hr>
         <div class="mdl-grid">
+
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview" ng-repeat="s in similar">
-            <h6>{{s.title}}</h6>
-                <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt="" />
+                <a style="display:block;text-decoration: none !important;" href="#/movie/details/{{movie.id}}">
+                    <h6>{{s.title}}</h6>
+                    <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt="" />
+                </a>
             </div>
+
+<!--
+            <a style="display:block;text-decoration: none !important;" href="#/movie/details/{{movie.id}}">
+            </a>
+-->
         </div>
 
     </div>

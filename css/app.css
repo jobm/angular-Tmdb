@@ -1,4 +1,4 @@
-﻿body{
+body{
   background: url("/assets/Background.png")no-repeat center center fixed;
   min-width: 100%;
   min-height: 100%;
@@ -54,8 +54,9 @@
 }
 .mdl-tabs{
     position: fixed;
-    background-color: white;
+    background-color: #EEEEEE;
     z-index: 100;
+    color: #fff;
 }
 .container{
     margin-left: 4%;
