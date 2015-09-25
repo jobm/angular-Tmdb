@@ -11,7 +11,7 @@
                 <h4>Genres</h4>
                 <hr />
                 <ul class="genres" ng-repeat="genre in movie.genres">
-                    <li><h4>{{genre.name}}</h4></li>
+                    <li><h4>{{genre.name}},</h4></li>
                 </ul>
                 <hr />
                 <h4>Rating</h4>
@@ -40,16 +40,26 @@
         <div class="mdl-grid">
 
             <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview" ng-repeat="s in similar">
-                <a style="display:block;text-decoration: none !important;" href="#/movie/details/{{movie.id}}">
-                    <h6>{{s.title}}</h6>
-                    <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt="" />
+
+                <a style="display:block;text-decoration: none !important;" href="#/movie/details/{{s.id}}">
+                    <div class="mdl-card">
+                        <div class="mdl-card__title">
+                            <h6 class="mdl-card__title-text">{{s.title}}</h6>
+                        </div>
+                        <div class="mdl-card__media">
+                           <img style="max-width:100%;"
+                             ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt=""/>
+                        </div>
+                    </div>
+<!--
+                    <div class="container-fluid">
+                        <h6>{{s.title}}</h6>
+                        <img style="max-width:100%;"
+                             ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt=""/>
+                    </div>
+-->
                 </a>
             </div>
-
-<!--
-            <a style="display:block;text-decoration: none !important;" href="#/movie/details/{{movie.id}}">
-            </a>
--->
         </div>
 
     </div>
