@@ -1,18 +1,46 @@
 <br>
-<div class="container">
+<div class="container movie_details">
+    <br />
     <h3>{{movie.title}}</h3>
     <div class="container">
         <div class="mdl-grid">
-            <div class="mdl-cell mdl-cell--4-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
-                <img ng-src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt=""/>
-
+            <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview">
+                <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{movie.poster_path}}" alt="" />
             </div>
-            <div class="mdl-cell mdl-cell--8-col mdl-cell-4-col-tablet mdl-cell-4-col-phone">
+            <div class="mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview">
+                <h4>Genres</h4>
+                <hr />
+                <ul class="genres" ng-repeat="genre in movie.genres">
+                    <li><h4>{{genre.name}}</h4></li>
+                </ul>
+                <hr />
+                <h4>Rating</h4>
+                <hr />
+                <span style="font-size:32px;" class="fa fa-star"> {{movie.vote_average}}</span>
+                <hr />
                 <h4>Movie Plot</h4>
+                <hr />
                 <p class="over-view">{{movie.overview}}</p>
+                <hr />
+                <span style="font-size:32px;" class="fa fa-tags"> {{movie.tagline}}</span>
+                <hr />
+            </div>
+        </div>
+        <hr />
+        <h3>Screenshots</h3>
+        <hr />
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview" ng-repeat="back_drop in back_drops">
+                <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{back_drop.file_path}}" alt="" />
+            </div>
+        </div>
+
+        <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-cell--8-col-phone shad_orverview" ng-repeat="s in similar">
+            <h6>{{s.title}}</h6>
+                <img style="max-width:100%;" ng-src="https://image.tmdb.org/t/p/w780{{s.poster_path}}" alt="" />
             </div>
         </div>
 
     </div>
-
 </div>

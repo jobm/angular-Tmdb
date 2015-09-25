@@ -1,0 +1,6 @@
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\bin\TmdbAngular.dll.config
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\bin\TmdbAngular.dll
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\bin\TmdbAngular.pdb
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\obj\Debug\TmdbAngular.csprojResolveAssemblyReference.cache
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\obj\Debug\TmdbAngular.dll
+c:\users\dennis kipkogei\documents\visual studio 2015\Projects\TmdbAngular\TmdbAngular\obj\Debug\TmdbAngular.pdb
